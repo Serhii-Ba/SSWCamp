@@ -8,7 +8,7 @@
 h3 {
     text-decoration: underline overline dotted red;
 }
-*#app {
+#app {
     background-color: #ffff00;
 }
 .btn {
@@ -16,7 +16,6 @@ h3 {
     color: #ffffff;
     border-color: #808080;
 }
-
 .msg {
     color: #e53935;
     text-align: center;
