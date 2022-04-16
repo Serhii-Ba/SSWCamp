@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Less3 Task1</title>
+     <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+ <div class = "container" id = "app">
+     <div :style="{color1}">
+        <p :style="{color}" v-if = "counter < maximum">{{txt}}</p>
+       <div v-if = "counter >= maximum" v-model="msg">
+            <p class="msg">{{msg}}</p>
+       </div>
+       <div class="button">
+            <button class="btn" @click= "select" v-on:click = "counter++">змінити кольори</button>
+       </div>
+     </div>
+ </div>
+ <span>
+        Є html – сторіночка із background – кольором – жовтим. І синім текстом. Є також кнопка при<br>
+        натисканні на котру, кольори змінюються: background на синій, текст на жовтий і так до безкінечності<br>
+        Ускладнення.<br>
+        Після 5ої зміни кольорів текст пропадає і з’являється повідомлення «Досить бавитись».
+ </span>
+
+ <script src="https://cdn.jsdelivr.net/npm/vue@next"></script>
+ <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
