@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Less3 Task2</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<div id="app" class="container">
+    <h3 class="title">Список завдань</h3>
+    <div class = "todo">
+        <input v-model="todo" type="text" placeholder="напиши завдання" />
+        <button @click="addtodo">додати завдання</button>
+
+        <div v-for="(todo, i) in array" :key="i">
+            <p>
+                <span>{{ i+1 }}</span>
+                <span class="todo_add">{{todo}}</span>
+                <input type="checkbox"/>
+            </p>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@next"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
