@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Less4 Task3</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+  <form class="container">
+     <fieldset>
+        <legend>Анкета</legend>
+        <label for="username">Заповніть ім`я:</label>
+        <input id="username" type="text" placeholder="наприклад, Тарас"
+               required maxlength="15" minlength="2" autocomplete="off" autofocus name="username"><br><br>
+        <!-- required: обязательный к заполнению, autocomplete: автозаполнять или нет -->
+        <label for="usersurname">Заповніть прізвище:</label>
+        <input id="usersurname" type="text" placeholder="наприклад, Бульба"
+               required maxlength="15" minlength="3" name="usersurname"><br><br>
+        <label for="#">Вкажіть стать:</label> <!-- radio: выбор одного из нескольких или/или -->
+        <label for="genderqueer">небінарна</label>
+        <input id="genderqueer" type="radio" name="sex" required>
+        <label for="usermale">чоловік</label>
+        <input id="usermale" type="radio" name="sex" required>
+        <label for="userfemale">жінка</label>
+        <input id="userfemale" type="radio" name="sex" required><br><br>
+        <label for="userphone">Вкажіть номер телефону:</label>
+        <input id="userphone" pattern="+38 0[0-9]{2}[0-9]{3}[0-9]{4}" type="tel" placeholder="+38 050 123 45 67"
+               required maxlength="13" minlength="13" name="user-phone"><br><br>
+        <label for="usernickname">Придумайте nickname:</label>
+        <input id="usernickname" type="text" placeholder="наприклад, Nick_777"
+               required maxlength="15" minlength="2" autocomplete="off" autofocus name="username"><br><br>
+        <div class="btn">
+            <input type="reset" value="Очистити форму">
+            <input type="submit" value="Відправити">
+        </div>
+     </fieldset>
+  </form>
+</body>
+</html>
