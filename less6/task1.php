@@ -24,8 +24,8 @@ echo "\n-----другий варіант-------\n";
 function countVowels1($str){
 
     $patt='~(?<vowels>[aeouyi])~';
-    preg_match_all($patt, $str,$a);
-    return count($a['vowels']);
+    preg_match_all($patt, $str,$a); //Виконує глобальний пошук шаблону у рядку
+    return count($a['vowels']); //підраховує кількість елементів масиву
 }
 
 print_r(countVowels1('Celebration'));
