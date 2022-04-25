@@ -8,7 +8,7 @@ function countVowels($str){
     $res = 0;
     $a=array('a','e','o','u','y','i');
     for($i=0; $i < strlen($str); $i++){
-        if (in_array($str[$i], $a) ){ //Перувіряє чи є значення у масиві
+        if (in_array($str[$i], $a) ){ //Перевіряє чи є значення у масиві
             $res++;
         }
     }
@@ -24,8 +24,8 @@ echo "\n-----другий варіант-------\n";
 function countVowels1($str){
 
     $patt='~(?<vowels>[aeouyi])~';
-    preg_match_all($patt, $str,$a); //Виконує глобальний пошук шаблону у рядку
-    return count($a['vowels']); //підраховує кількість елементів масиву
+    preg_match_all($patt, $str,$a); //Виконує глобальний пошук за шаблоном у рядку
+    return count($a['vowels']); //Підраховує кількість елементів масиву
 }
 
 print_r(countVowels1('Celebration'));
