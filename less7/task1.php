@@ -4,7 +4,7 @@ class Animal {
     public $food;
     public $location;
     public function makeNoise() {
-        echo "така тварина спить";
+        echo "така тварина говорить";
     }
     public function eat() {
         echo "така тварина їсть";
@@ -16,8 +16,9 @@ class Animal {
 
 class Cat extends Animal {
 
-    public $food = "рибу";
-    public $name = 'кішка';
+    public $food = "-рибу ";
+    public $name = "кішка";
+    public $location = "домашня";
     public function makeNoise() {
         echo "Мяу-мяу";
     }
@@ -31,8 +32,9 @@ class Cat extends Animal {
 
 class Dog extends Animal {
 
-    public $food = "м`ясо";
+    public $food = "-м`ясо ";
     public $name = "собака";
+    public $location = "домашня";
     public function makeNoise() {
         echo "Гав-гав";
     }
@@ -46,8 +48,9 @@ class Dog extends Animal {
 
 class Horse extends Animal {
 
-    public $food = "сіно";
-    public $name = 'кінь';
+    public $food = "-сіно ";
+    public $name = "кінь";
+    public $location = "домашня";
     public function makeNoise() {
         echo "Іго-го";
     }
@@ -62,8 +65,8 @@ class Horse extends Animal {
 class Veterinarian {
 
     public function treatAnimal (Animal $animal) {
-    $animal->makeNoise();
-    $animal->eat();
+        $animal->makeNoise();
+        $animal->eat();
     }
 }
 
@@ -72,7 +75,7 @@ $animals[0] = new Cat();
 $animals[1] = new Dog();
 $animals[2] = new Horse();
 
-for ($i=0;$i<3;$i=$i+1){
+for ($i=0; $i<3; $i=$i+1) {
     $v = new Veterinarian();
     $v->treatAnimal($animals[$i]);
 }
