@@ -73,5 +73,6 @@ $animals[1] = new Dog();
 $animals[2] = new Horse();
 
 for ($i=0;$i<3;$i=$i+1){
-    $v = $
+    $v = new Veterinarian();
+    $v->treatAnimal($animals[$i]);
 }
