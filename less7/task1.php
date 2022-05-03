@@ -2,13 +2,10 @@
 class Animals {
 
     public $food;
-
     public $location;
-
     public function makeNoise() {
         echo "Така тварина спить";
     }
-
     public function eat() {
 
     }
@@ -20,15 +17,23 @@ class Animals {
 class Cat extends Animal {
 
     public $name = 'Кішка';
+    public function makeNoise() {
+        echo "Мяу-мяу";
+    }
+    public function eat() {
 
-    public function may() {
-        echo 'мяу';
     }
 }
 
 class Dog extends Animal {
 
     public $name = 'Собака';
+    public function makeNois() {
+        echo "Гав-гав";
+    }
+    public function eat() {
+
+    }
 }
 
 class Horse extends Animal {
