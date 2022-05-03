@@ -79,3 +79,5 @@ for ($i=0; $i<3; $i=$i+1) {
     $v = new Veterinarian();
     $v->treatAnimal($animals[$i]);
 }
+
+var_dump($animals);
