@@ -40,3 +40,7 @@ class Horse extends Animal {
 
     public $name = 'Кінь';
 }
+
+class Veterinarian {
+
+}
