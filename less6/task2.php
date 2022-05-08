@@ -24,7 +24,7 @@ class Student {
     public $group;
     public $mark; //середня оцінка
     public $scientific; //наукова робота
-    public $scholarship; //стіпендія
+    public $scholarship; //стипендія
 
     function __construct($Fn,$Ln,$Gr,$Mk,$Sc){
         $this->firstName=$Fn;
