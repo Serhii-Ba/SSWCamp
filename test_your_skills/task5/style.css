@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+#btn {
+    display: flex;
+    justify-content: space-evenly;
+}
