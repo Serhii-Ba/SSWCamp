@@ -23,5 +23,6 @@ $stm = $connection->query($sgl);
 $stm->execute();
 $list = $stm->fetchAll(PDO::FETCH_ASSOC);
 
-echo "<pre>";
-var_dump($list);
+/*echo "<pre>";
+var_dump($list);*/
+include 'index.html';
